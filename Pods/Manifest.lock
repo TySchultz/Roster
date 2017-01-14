@@ -1,0 +1,39 @@
+PODS:
+  - IGListKit (1.0.0)
+  - LTMorphingLabel (0.3.0)
+  - Realm (2.0.0):
+    - Realm/Headers (= 2.0.0)
+  - Realm/Headers (2.0.0)
+  - RealmSwift (2.0.0):
+    - Realm (= 2.0.0)
+  - SnapKit (3.0.2)
+  - ZFDragableModalTransition (0.6)
+
+DEPENDENCIES:
+  - IGListKit
+  - LTMorphingLabel (from `https://github.com/lexrus/LTMorphingLabel.git`, branch `swift3`)
+  - RealmSwift (= 2.0.0)
+  - SnapKit (~> 3.0.0)
+  - ZFDragableModalTransition
+
+EXTERNAL SOURCES:
+  LTMorphingLabel:
+    :branch: swift3
+    :git: https://github.com/lexrus/LTMorphingLabel.git
+
+CHECKOUT OPTIONS:
+  LTMorphingLabel:
+    :commit: 93c60bb1626aa96dbd5e899c82e280d7a785315d
+    :git: https://github.com/lexrus/LTMorphingLabel.git
+
+SPEC CHECKSUMS:
+  IGListKit: 3242c475fa77e2abf2d4de319703088008fbe9b9
+  LTMorphingLabel: 2777d8d9cb699125f48dfcd95d78bd3d77c87ade
+  Realm: 6dda421ae4b3e9a09742fc2cf4b876d459cbedcd
+  RealmSwift: 7d015f34a2781a50889be9b5a15c36c08597ea0e
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+  ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
+
+PODFILE CHECKSUM: 7ac63602969ad0a5c8ee788dc6ee4ee2f565162d
+
+COCOAPODS: 1.0.1

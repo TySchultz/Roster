@@ -15,8 +15,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = UINavigationController(rootViewController: MainScheduleViewController())
+        window?.makeKeyAndVisible()
+        setupGradient()
+        
         return true
+    }
+    
+    func setupGradient(  ){
+        let blue = UIColor(red:0.02, green:0.40, blue:0.49, alpha:1.00).cgColor
+        let green = UIColor(red:0.00, green:0.66, blue:0.33, alpha:1.00).cgColor
+        let gradient: CAGradientLayer = CAGradientLayer()
+        gradient.frame = window!.frame
+        gradient.colors = [blue, green]
+        gradient.name = "bottomGradient"
+        gradient.startPoint = CGPoint(x: 0,y: 0)
+        gradient.endPoint = CGPoint(x: 1.0,y: 1.0)
+        window?.layer.insertSublayer(gradient, at: 0)
+        window?.layer.masksToBounds = false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
